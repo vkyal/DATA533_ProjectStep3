@@ -1,8 +1,6 @@
 language: python
 python:
-  - "3.4"
-  - "3.5"
-  - "3.10"
+  - "3.9"
 # command to run tests
 before_install:
   - pip install -U pip
