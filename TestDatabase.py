@@ -23,7 +23,7 @@ class TestDatabase(unittest.TestCase):
         self.tableList = initialize()
         self.userRes = Restaurant(location='Downtown', cuisine='Canadian')
         self.chosenTable = chosenTable('CRAFT',tableList)
-        self.feedback = askFeedback()
+        self.feedback = 4
         
        
         
