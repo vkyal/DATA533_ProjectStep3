@@ -1,8 +1,0 @@
-language: python
-python:
-  - "3.4"
-  - "3.5"
-  - "3.10"
-# command to run tests
-script:
-  - python TestSuite.py
