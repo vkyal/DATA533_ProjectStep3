@@ -16,10 +16,10 @@ class TestCustomer(unittest.TestCase):
     
     def setUp(self):
         self.initialize = initialize()
-        self.location = location()
-        self.cuisine = cuisine()
-        self.askbooking = askbooking()
-        self.checkin = checkin()
+        self.location = "Downtown"
+        self.cuisine = "Canadian"
+        self.askbooking = "CRAFT"
+        self.checkin = 1
         self.record = record()
         self.locationChoice = ['Downtown', 'Glenmore', 'Around Campus',' Rutland']
         self.cuisineChoice = ['Canadian',' Chinese',' Indian','Vietnamaese','Taiwanese']
@@ -31,10 +31,10 @@ class TestCustomer(unittest.TestCase):
     
     
     def testType(self):
-        self.assertNone(location())
-        self.assertNone(cuisine())
-        self.assertNone(askbooking())
-        self.assertNone(checkin())
+        self.assertEqual(type(location()),str)
+        self.assertEqual(type(cuisine()),str)
+        self.assertEqual(type(askbooking()),str)
+        self.assertEqual(type(checkin()),int)
         self.assertNone(greeting())
         
     def testInGivenChoice(self):
