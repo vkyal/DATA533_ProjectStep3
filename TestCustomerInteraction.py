@@ -31,10 +31,10 @@ class TestCustomer(unittest.TestCase):
     
     
     def testType(self):
-        self.assertEqual(type(location()),str)
-        self.assertEqual(type(cuisine()),str)
-        self.assertEqual(type(askbooking()),str)
-        self.assertEqual(type(checkin()),int)
+        self.assertNone(location())
+        self.assertNone(cuisine())
+        self.assertNone(askbooking())
+        self.assertNone(checkin())
         self.assertNone(greeting())
         
     def testInGivenChoice(self):
