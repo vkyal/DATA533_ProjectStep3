@@ -20,7 +20,6 @@ class TestCustomer(unittest.TestCase):
         self.cuisine = "Canadian"
         self.askbooking = "CRAFT"
         self.checkin = 1
-        self.record = record()
         self.locationChoice = ['Downtown', 'Glenmore', 'Around Campus',' Rutland']
         self.cuisineChoice = ['Canadian',' Chinese',' Indian','Vietnamaese','Taiwanese']
         self.bookChoice = ['Golden island','Tossing Pizza','CRAFT','Cactus Club','Pho Soc Trang','O Machi','Ozeki','New Punjab','eMDees Indian Bistro']
